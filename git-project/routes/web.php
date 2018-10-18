@@ -14,6 +14,7 @@
 Route::get('/', function () {
     $comments = Comment::all();
     return view('welcome', compact('comments'));
+    // just some placeholder shit
 });
 
 Route::get('/create', function(){
