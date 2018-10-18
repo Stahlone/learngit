@@ -12,7 +12,8 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $comments = Comment::all();
+    return view('welcome', compact('comments'));
 });
 
 Route::get('/create', function(){
